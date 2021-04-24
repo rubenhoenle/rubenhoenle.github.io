@@ -7,7 +7,6 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Home', path: 'menu', url: 'home.html'}
 - {name: 'Über mich', path: 'menu', url: 'about.html'}
 - {name: 'Archiv', path: 'menu', url: 'writing.html'}
 - {name: 'Kontakt', path: 'menu', url: 'contact.html'}
