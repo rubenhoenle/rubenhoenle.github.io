@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Ruben Hönle'
-description:	       'Blog von Ruben Hönle'
+description:	       'Student Informatics'
 author:              'Ruben Hönle'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
