@@ -17,5 +17,5 @@ Nachdem ich bis 2016 erfolgreich die Realschule besucht hatte, entschied ich mic
 [comment]: <> (## Kenntnisse - Verwendung des VCS git - Entwicklung von Anwendungen in Java -usw)
 
 ## Hobbys
-In meiner Freizeit spiele ich vor allem Schlagzeug im Musikverein Bargau und in der SHW Bergkapelle Wasseralfingen, hier bin ich auch in der Betreuung des Webauftritts aktiv. Außerdem löse ich gerne sämtliche Arten von Rubiks Cubes (auch unter dem Begriff Zauberwürfel bekannt).
+In meiner Freizeit spiele ich vor allem Schlagzeug im Musikverein Bargau und in der SHW Bergkapelle Wasseralfingen, hier bin ich auch an der Betreuung des Webauftritts beteiligt. Außerdem löse ich gerne sämtliche Arten von Rubiks Cubes (auch unter dem Begriff Zauberwürfel bekannt).
 
