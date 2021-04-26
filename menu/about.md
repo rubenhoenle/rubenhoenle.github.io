@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Über mich
+image: about_me.png
 ---
 
 ![Das bin ich.]({{ "/assets/img/about_me.jpg" | absolute_url }}){: .center-image }
