@@ -5,6 +5,7 @@ image: about_me.png
 ---
 
 ![Das bin ich.]({{ "/assets/img/about_me.jpg" | absolute_url }}){: .center-image }
+![Das bin ich.](/assets/img/about_me.jpg)
 
 Hey, ich bin Ruben und studiere derzeit Informatik an der DHBW Heidenheim. Gerüchten zufolge beschäftige ich mich daher gerne mit sämtlichem Computerkram ...
 
