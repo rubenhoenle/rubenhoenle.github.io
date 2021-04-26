@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing
+title: Archiv
 ---
 <ul class="posts">
   {% for post in site.posts %}
