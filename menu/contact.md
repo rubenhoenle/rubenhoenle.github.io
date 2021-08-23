@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Kontakt
 ---
 
-Update the `menu/contact.md` file to change your Contact page.
+Falls du mich kontaktieren möchtest, schreib mir gerne eine Mail an [kontakt@rubenhoenle.de](mailto:kontakt@rubenhoenle.de)!
