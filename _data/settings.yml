@@ -7,8 +7,8 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Archiv', path: 'menu', url: 'writing.html'}
-- {name: 'Kontakt', path: 'menu', url: 'contact.html'}
+- {name: 'Archive', path: 'menu', url: 'writing.html'}
+- {name: 'Contact', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
@@ -20,11 +20,11 @@ social:
 
 # Customize site text
 pagination:
-  next_page: 'Neuer'
-  previous_page: 'Älter'
+  next_page: 'Newer'
+  previous_page: 'Older'
 
-sharing_button_prompt: 'Teile diesen Post gerne mit deinen Freunden!'
+sharing_button_prompt: 'Share this post with your friends!'
 
-related_posts: 'Vielleicht gefällt dir auch:'
+related_posts: 'You may also enjoy:'
 
-post_date_prefix: 'Veröffentlicht am'
+post_date_prefix: 'Written on'
