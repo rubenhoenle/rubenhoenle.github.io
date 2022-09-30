@@ -3,4 +3,6 @@ layout: page
 title: Contact
 ---
 
-Falls du mich kontaktieren möchtest, schreib mir gerne eine Mail an [kontakt@rubenhoenle.de](mailto:kontakt@rubenhoenle.de) !
+If you would like to contact me, feel free to send me an email. 
+
+[rubenhoenle.e27vw@aleeas.com](mailto:rubenhoenle.e27vw@aleeas.com)
