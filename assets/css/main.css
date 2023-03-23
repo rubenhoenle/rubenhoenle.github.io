@@ -374,7 +374,7 @@ th, td {
 }
 
 .fa-envelope:hover {
-	color: #f39c12;
+	color: #00aced;
 }
 
 .fa-twitter {
@@ -507,7 +507,7 @@ th, td {
 	color: black;
 }
 
-.fa-rss-square {
+.fa-square-rss {
   padding: 5px;
 	-o-transition:.5s;
   	-ms-transition:.5s;
@@ -516,6 +516,6 @@ th, td {
   	transition: .5s;
 }
 
-.fa-rss-square:hover {
-	color: #ff6600;
+.fa-square-rss:hover {
+	color: #f39c12;
 }
