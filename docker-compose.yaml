@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  blog:
+    container_name: blog
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    ports:
+      - 5000:80

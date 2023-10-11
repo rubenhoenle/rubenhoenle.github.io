@@ -14,7 +14,7 @@ menu:
 social:
 - {icon: 'fa-brands fa-github', link: 'https://github.com/rubenhoenle'}
 #- {icon: 'fa-brands fa-mastodon', link: 'https://mastodon.social/@rubenhoenle@techhub.social'}
-- {icon: 'fa fa-envelope', link: 'mailto:rubenhoenle.e27vw@aleeas.com'}
+- {icon: 'fa fa-envelope', link: 'mailto:ruben@hoenle.xyz'}
 #- {icon: 'rss-square', link: '/feed.xml'}
 - {icon: 'fa fa-square-rss', link: '/rss-feed.xml'}
 
