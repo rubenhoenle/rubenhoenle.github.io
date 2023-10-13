@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
   push:
-    branches: [ "main", "asciidoc" ]
+    branches: ["main"]
 
 env:
   ASCIIDOC_OUTPUT_DIR: asciidoctor-output
