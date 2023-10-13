@@ -1,4 +1,4 @@
-[![Build and deploy](https://github.com/rubenhoenle/rubenhoenle.github.io/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/rubenhoenle/rubenhoenle.github.io/actions/workflows/build.yaml)
+[![CI/CD](https://github.com/rubenhoenle/rubenhoenle.github.io/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/rubenhoenle/rubenhoenle.github.io/actions/workflows/build.yaml)
 
 # GitHub Pages
 This repository contains the sources for [my blog](https://hoenle.xyz).

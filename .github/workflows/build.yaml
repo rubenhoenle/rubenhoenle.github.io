@@ -1,8 +1,8 @@
-name: Build and deploy
+name: CI/CD
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "*"]
 
 env:
   ASCIIDOC_OUTPUT_DIR: asciidoctor-output
@@ -10,8 +10,8 @@ env:
   PAGES_CNAME: hoenle.xyz
 
 jobs:
-  build-and-deploy:
-    name: Build and deploy
+  ci-cd:
+    name: CI/CD
     runs-on: ubuntu-latest
 
     steps:
@@ -37,6 +37,7 @@ jobs:
 
       - name: Deploy jekyll to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: 'github-actions[bot]'          
@@ -47,6 +48,7 @@ jobs:
 
       - name: Deploy asciidoc to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: 'github-actions[bot]'          
