@@ -1,0 +1,66 @@
+= MV Bargau: Konzertmeister
+Ruben Hönle <ruben@hoenle.xyz>
+v0.1, 2023-10-10
+
+Liebe Musikerkolleg*innen,
+
+wie ihr wahrscheinlich bereits mitbekommen habt, möchten wir gerne die Konzertmeister App beim Musikverein Bargau einsetzen. 
+Die wichtigsten Infos dazu habe ich euch hier zusammengefasst.
+
+== Was ist das, was kann das?!
+Kurz gesagt: Die Konzertmeister Anwendung wird uns bei der Auftritts- und Probenplanung unterstützen. 
+Jede Musiker*in kann in der App eintragen ob er/sie bei einem Termin anwesend ist oder nicht. 
+So wird die App auch bei Auftrittsanfragen helfen können, die Spielfähigkeit des Orchesters abzufragen. 
+Daher wäre es super, wenn ihr alle mitmacht und den Konzertmeister fleißig nutzt. 
+Weitere Infos zur Konzertmeister Anwendung findet ihr 
+https://konzertmeister.app/de/[hier].
+
+== Folgende Schritte sind von euch aus zu erledigen
+
+=== 1. Installation der Konzertmeister App auf eurem Mobiltelefon
+*Anmerkung:* Es gibt auch eine Webanwendung für den Konzertmeister, es ist somit nicht zwingend nötig die App auf eurem Smartphone zu installieren. 
+Meiner Ansicht nach ist die Installation der App aber definitiv sinnvoll. 
+Durch die Webapp kann die Konzertmeister Anwendung aber auch (zusätzlich) am Computer genutzt werden.
+
+https://web.konzertmeister.app/?lang=de[Konzertmeister Webanwendung öffnen]
+
+Die Konzertmeister App ist für iOS bzw. iPhone User im AppStore erhältlich. Nutzer eines Android Smartphones können die App über den Google Play Store beziehen. Mit den untenstehenden Links gelangt ihr direkt zum Download der App.
+
+https://apps.apple.com/at/app/konzertmeister/id1114620982[Konzertmeister App für iOS herunterladen]
+
+https://play.google.com/store/apps/details?id=rocks.konzertmeister.Production[Konzertmeister App für Android herunterladen]
+
+*Tipp:* Wer ein Android Smartphone hat und den Google Play Store nicht nutzen möchte, kann die Konzertmeister APK auch direkt vom Anbieter herunterladen. 
+Mehr Infos und den Link zum Download findet ihr 
+https://konzertmeister.app/de/help/116-help-de/374-help-faq-android-apk-de[hier].
+
+=== 2. Anlegen eines Benutzerkontos
+Nachdem ihr euch die App heruntergeladen habt bzw. die Webanwendung geöffnet habt müsst ihr euch dort registieren. 
+Öffnet dazu die Konzertmeister-App auf eurem Smartphone und tippt auf _"Ich möchte mich Registrieren"_.
+Gebt euren Vor- und Nachnamen an und eure Mailadresse. 
+Wer möchte kann sich außerdem die 
+https://konzertmeister.app/de/privacy[Datenschutzerklärung] 
+und die 
+https://konzertmeister.app/de/terms[Nutzungsbedingungen] 
+des Konzertmeisters durchlesen. 
+Eure Mobilnummer müsst ihr beim Konzertmeister von Seite des Musikvereins aus *nicht* angeben.
+
+*Für PC-Nutzer:* https://web.konzertmeister.app/signup[Hier gehts zur Registrierung in der Webanwendung]
+
+=== 3. Mitgliedsanfrage senden
+
+Im Reiter 
+https://web.konzertmeister.app/organisations[Vereinsübersicht] 
+des Konzertmeisters könnt ihr dann nach _Musikverein Bargau_ suchen und eine Mitgliedsanfrage senden. 
+Ich nehme euch dann in den Verein auf.
+
+== Geschafft!
+Bei Fragen steht Ruben euch gerne jederzeit zur Verfügung. 
+
+Weitere Infos findet ihr außerdem auf der 
+https://konzertmeister.app/de/help[Hilfe-Seite]
+des Konzertmeisters.
+
+*Pro-Tipp:* Wer möchte, kann die Termine aus der Konzertmeister-App in seinen privaten digitalen Kalender (z.B. Google, Apple, Outlook) einbinden.
+Eine Anleitung dazu findet ihr https://konzertmeister.app/de/help/116-help-de/349-help-calendar-de[hier].
+
