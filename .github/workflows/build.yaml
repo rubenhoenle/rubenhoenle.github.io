@@ -2,59 +2,40 @@ name: CI/CD
 
 on:
   push:
-    branches: ["main", "*"]
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 env:
-  ASCIIDOC_OUTPUT_DIR: asciidoctor-output
-  JEKYLL_VERSION: 3.6.2
   PAGES_CNAME: hoenle.xyz
 
 jobs:
   ci-cd:
     name: CI/CD
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./blog
-          destination: ./blog/_site
+      - name: Install nix
+        uses: cachix/install-nix-action@v26
 
-      - name: Setup ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
+      - name: Check code format
+        run: nix flake check
 
-      - name: Install asciidoctor
-        run: gem install asciidoctor
+      - name: Build
+        run: nix build .#html
 
-      - name: Build asciidoc
-        run: asciidoctor -D ${{ env.ASCIIDOC_OUTPUT_DIR  }} -R asciidoc ./**/*.adoc
-
-      - name: Deploy jekyll to GitHub pages
+      - name: Deploy to GitHub pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref_name == 'main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: 'github-actions[bot]'          
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
-          publish_dir: ./blog/_site
-          cname: ${{ env.PAGES_CNAME }}
-
-      - name: Deploy asciidoc to GitHub pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with: 
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          user_name: 'github-actions[bot]'          
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: ${{ github.event.head_commit.message }}
-          publish_dir: ${{ env.ASCIIDOC_OUTPUT_DIR  }} 
-          destination_dir: docs
+          publish_dir: ./result
           cname: ${{ env.PAGES_CNAME }}
 

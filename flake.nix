@@ -5,14 +5,23 @@
     nixpkgs.url = "github:NixOS/nixpkgs/release-23.05";
   };
 
-  outputs = { self, nixpkgs, ... }:
+  outputs = { nixpkgs, ... }:
   let
     pkgs = import nixpkgs { system = "x86_64-linux"; };
   in
   {
     packages.x86_64-linux = 
     let
-      asciidoc-blog = pkgs.stdenv.mkDerivation {
+      homepage = pkgs.stdenv.mkDerivation {
+        name = "homepage";
+        src = ./homepage;
+        installPhase = ''
+          mkdir -p $out/docs
+          cp index.html $out
+          cp main.css $out
+        '';
+      };
+      asciidoc = pkgs.stdenv.mkDerivation {
         name = "blog-asciidoc";
         src = ./asciidoc;
         buildInputs = with pkgs; [
@@ -24,27 +33,11 @@
         '';
       };
 
-      jekyll-blog = pkgs.stdenv.mkDerivation {
-        name = "blog-jekyll";
-        src = ./blog;
-        buildInputs = with pkgs; [
-          jekyll
-          rubyPackages.jekyll-paginate
-          rubyPackages.jekyll-feed 
-        ];
-        buildPhase = '' 
-          jekyll build
-        '';
-        installPhase = ''
-          mkdir -p $out/
-          cp -r _site/* $out/
-        '';
-      };
       merge = pkgs.symlinkJoin {
-        name = "merge jekyll and asciidoc";
+        name = "merge homepage and asciidoc";
         paths = [
-          jekyll-blog
-          asciidoc-blog
+          homepage
+          asciidoc
         ];
       };
     in
@@ -52,6 +45,7 @@
       default = pkgs.writeScriptBin "serve" ''
         ${pkgs.devd}/bin/devd ${merge}
       '';
+      html = merge;
     };
   };
 }
