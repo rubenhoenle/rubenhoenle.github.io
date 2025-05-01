@@ -42,7 +42,9 @@
           deploy-html = pkgs.writeShellApplication {
             name = "deploy-html";
             text = ''
-              ${pkgs.openssh}/bin/scp -r ${merge}/* www-deploy@vps:/var/www/homepage
+              ${pkgs.openssh}/bin/ssh www-data@vps "rm -rf /var/www/homepage/*"
+              ${pkgs.openssh}/bin/scp -r ${merge}/* www-data@vps:/var/www/homepage
+              ${pkgs.openssh}/bin/ssh www-data@vps "chmod -R 755 /var/www/homepage"
             '';
           };
         in
