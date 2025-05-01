@@ -32,7 +32,6 @@
               asciidoctor -D $out/docs -R . ./**/*.adoc
             '';
           };
-
           merge = pkgs.symlinkJoin {
             name = "merge homepage and asciidoc";
             paths = [
@@ -40,12 +39,19 @@
               asciidoc
             ];
           };
+          deploy-html = pkgs.writeShellApplication {
+            name = "deploy-html";
+            text = ''
+              ${pkgs.openssh}/bin/scp -r ${merge}/* www-deploy@vps:/var/www/homepage
+            '';
+          };
         in
         {
           default = pkgs.writeScriptBin "serve" ''
             ${pkgs.devd}/bin/devd ${merge}
           '';
           html = merge;
+          deploy = deploy-html;
         };
     };
 }
